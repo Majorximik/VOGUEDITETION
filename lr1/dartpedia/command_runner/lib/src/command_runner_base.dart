@@ -6,7 +6,11 @@ import 'arguments.dart';
 import 'exceptions.dart';
 
 class CommandRunner {
-  CommandRunner({this.onError});
+  CommandRunner({this.onOutput, this.onError});
+
+  /// If not null, this method is used to handle output.
+  /// If null, the output is printed with print().
+  FutureOr<void> Function(String)? onOutput;
 
   final Map<String, Command> _commands = <String, Command>{};
 
@@ -20,7 +24,11 @@ class CommandRunner {
       final ArgResults results = parse(input);
       if (results.command != null) {
         Object? output = await results.command!.run(results);
-        print(output.toString());
+        if (onOutput != null) {
+          await onOutput!(output.toString());
+        } else {
+          print(output.toString());
+        }
       }
     } on Exception catch (exception) {
       if (onError != null) {
