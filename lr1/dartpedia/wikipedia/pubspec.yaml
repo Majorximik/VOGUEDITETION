@@ -1,14 +1,11 @@
-name: command_runner
-description: A starting point for Dart libraries or applications.
+name: wikipedia
+description: A sample command-line application.
 version: 1.0.0
 publish_to: none
 resolution: workspace
 
 environment:
   sdk: ^3.11.3
-
-dependencies:
-  path: ^1.9.0
 
 dev_dependencies:
   lints: ^6.0.0
