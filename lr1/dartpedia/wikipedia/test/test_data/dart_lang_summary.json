@@ -1,0 +1,21 @@
+{
+  "titles": {
+    "canonical": "Dart_(programming_language)",
+    "normalized": "Dart (programming language)",
+    "display": "<span class=\"mw-page-title-main\">Dart (programming language)</span>"
+  },
+  "pageid": 33033735,
+  "extract": "Dart is a programming language designed by Google.",
+  "extract_html": "<p><b>Dart</b> is a programming language designed by Google.</p>",
+  "lang": "en",
+  "dir": "ltr",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Dart_(programming_language)"
+    },
+    "mobile": {
+      "page": "https://en.m.wikipedia.org/wiki/Dart_(programming_language)"
+    }
+  },
+  "description": "Programming language"
+}

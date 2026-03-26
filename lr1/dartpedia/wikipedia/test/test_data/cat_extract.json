@@ -1,0 +1,14 @@
+{
+  "query": {
+    "pages": {
+      "1": {
+        "title": "Cat",
+        "extract": "The cat is a domestic species of small carnivorous mammal."
+      },
+      "2": {
+        "title": "Cats",
+        "extract": "Cats may also refer to multiple related topics."
+      }
+    }
+  }
+}
